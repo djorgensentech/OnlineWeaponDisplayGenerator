@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Weapon Display Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="icon/x-icon" href="./src/icons/favicon.ico">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="./src/images/logo.png">
+    </header>
+    <div id="content">
+        <div id="left-column" class="sidebar"></div>
+        <div id="main-column">
+            <div id="weapon-image">
+                <img id="weapon-image-actual" src="./src/images/trident.png" alt="Weapon Image" width="200" height="200" />
+            </div>
+            <form id="main-form">
+                <div id="coordinates">
+                    <label class="lb-coord">
+                        X
+                        <input id="lbX" type="text" class="coord" value="100">
+                    </label>
+                    <label class="lb-coord">
+                        Y
+                        <input id="lbY" type="text" class="coord" value="62">
+                    </label>
+                    <label class="lb-coord">
+                        Z
+                        <input id="lbZ" type="text" class="coord" value="-100">
+                    </label>
+                </div>
+                <div id="facing">   
+                    <label class="select-box">
+                        Facing Direction
+                        <select id="slSide">
+                            <option value="-X">-X</option>
+                            <option value="-Z">-Z</option>
+                            <option value="+X">+X</option>
+                            <option value="+Z">+Z</option>
+                        </select>
+                    </label>
+                </div>
+                <div id="weapon">
+                    <label class="select-box">
+                        Weapon
+                        <select id="slWeapon">
+                            <option value="trident">Trident</option>
+                            <option value="axe">Axe</option>
+                            <option value="mace">Mace</option>
+                            <option value="sword">Sword</option>
+                            <option value="bow">Bow</option>
+                        </select>
+                    </label>
+                </div>
+            </form>
+                <div id="output">
+                    <p>Command</p>
+                    <div id="output-box">
+                        <div id="command-output">
+                            Please enter coordinate values.
+                        </div>
+                        <button id="bnCopy">
+                            <img src="./src/images/copy.png" alt="Copy Icon" width="15px" height="15px">
+                        </button>
+                    </div>
+                </div>
+        </div>
+        <div id="right-column" class="sidebar"></div>
+    </div>
+    <footer>
+        Created by KachiggaWinky | Not officially sponsored by Minecraft
+    </footer>
+</body>
+</html>

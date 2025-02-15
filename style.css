@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+header {
+    background-color: rgb(15, 17, 17);
+    color: antiquewhite;
+    padding: 40px;
+    font-size: large;
+    flex-direction: column;
+    display: flex;
+}
+
+footer {
+    padding: 20px;
+    background-color: rgb(15, 17, 17);
+    color: white;
+    text-align: center;
+}
+
+header img {
+    align-self: center;
+    width: 700px;
+    height: auto;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1;
+    background-color: rgb(40, 41, 43);
+}
+
+#main-column {
+    padding: 25px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#main-form {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+#coordinates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#weapon-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(15, 17, 17);
+}
+
+.coord {
+    width: 100px;
+    
+}
+
+.lb-coord {
+    padding: 10px;
+    color: white;
+    background-color: rgb(15, 17, 17);
+    border-radius: 10px;
+}
+
+.select-box {
+    padding: 10px;
+    color: white;
+    background-color: rgb(15, 17, 17);
+    border-radius: 10px;
+    border: none;
+}
+
+#left-column {
+    flex: 1;
+}
+
+#right-column {
+    flex: 1;
+}
+
+button {
+    background-color: rgb(15, 17, 17);
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 2;
+    position: absolute;
+}
+
+#output {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+}
+
+#output-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sidebar {
+    background-color: rgb(30, 31, 32);
+}
+
+#command-output {
+    padding: 50px 30px;
+    background-color: rgb(30, 31, 32);
+    color: white;
+    z-index: 1;
+    position: relative;
+}
